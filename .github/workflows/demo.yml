@@ -2,6 +2,7 @@ name: GitHub Actions Demo
 on: [push]
 jobs:
   Explore-GitHub-Actions:
+    name: First job
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
@@ -15,3 +16,8 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+  Added second job:
+    name: second job
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "second job successful"
