@@ -15,3 +15,8 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+  Added second job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "This is the second job running."
+      - run: file:///C:/Users/Priya/repos/demo-pipeline/index.html 
